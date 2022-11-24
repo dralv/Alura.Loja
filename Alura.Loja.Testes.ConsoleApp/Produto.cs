@@ -1,4 +1,7 @@
-﻿namespace Alura.Loja.Testes.ConsoleApp
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace Alura.Loja.Testes.ConsoleApp
 {
     public class Produto
     {
@@ -7,6 +10,7 @@
         public string Categoria { get; internal set; }
         public double PrecoUnitario { get; internal set; }
         public string Unidade { get; set; }
+        public IList<PromocaoProduto> Promocoes{ get; set; }
 
 
 
